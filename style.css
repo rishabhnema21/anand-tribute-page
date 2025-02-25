@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --font-family: "Quintessential", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #432818;
+    --primary-color: #FFE6A7;
+    --secondary-color: #BB9457;
+    --text-color: white;
+    --primary-shadow : #99582A;
+    --hindi-font : "Inknut+Antiqua"
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height:1.7rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+}
+
+::selection {
+  color: white;
+  background:rebeccapurple;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    user-select: none;
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--primary-shadow);
+}
+
+.hero img {
+    height: 33.5rem;
+    width: 78.55rem;
+    filter: brightness(40%);
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    color: var(--text-color);
+    font-weight: var(--bolder-font);
+    font-size: 35px;
+    text-shadow: 5px 3px 10px var(--primary-shadow);
+  }
+
+  .about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+
+  .about h2 {
+    margin-bottom: var(--bottom-margin);
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary-color);
+  }
+
+  .about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+    color: var(--text-color);
+    font-size: larger;
+    text-align: justify;
+    font-family: sans-serif;
+  }
+
+  .movie-plot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:justify;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+  }
+
+  .movie-plot img {
+    height: 40rem;
+    padding: 30px;
+  }
+
+  .plot-text h2 {
+    padding-right: 1rem;
+    padding-top: 30px;
+    color: var(--bg-color);
+    font-weight: var(--bolder-font);
+    text-shadow: 0 3px 5px var(--primary-shadow);
+  }
+
+  .plot-text p {
+    padding: 15px;
+    text-shadow: 0 3px 5px black;
+  }
+
+  .starcast {
+    background-color: #6F1D1B;
+    padding-bottom: 4rem;
+  }
+
+  .starcast h2 {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 30px;
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+
+  .actor-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .makers {
+    height: 350px;
+    width: 40%;
+    border-radius: 3%;
+    background-color: var(--secondary-color);
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 0px 3px var(--primary-color);
+  }
+
+  .producer .actor-image {
+    background-position: center;
+  }
+
+  .actor {
+    height: 350px;
+    width: 23%;
+    border-radius: 3%;
+    background-color: var(--secondary-color);
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+  }
+
+  .actor-image {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* margin-bottom: 44px;
+    margin-top: 1rem;
+    margin-bottom: 1rem; */
+  }
+
+  .actor1 .actor-image {
+    background-position: center;
+  }
+
+  .actor4 .actor-image {
+    background-position: top;
+  }
+
+  .actor7 .actor-image {
+    filter: contrast(130%);
+    background-position: center;
+  }
+
+  .actor-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .songs {
+    background-color: var(--primary-shadow);
+    padding: 1rem 6rem;
+    padding-bottom: 5rem;
+  }
+
+  .songs h2 {
+    padding-top: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+
+  .music-intro {
+    margin-top: 3rem;
+    background-color: #432818;
+  }
+
+  .songs p {
+    line-height: var(--line-height);
+    padding: 3rem;
+    color: var(--text-color);
+    font-size: larger;
+    text-align: justify;
+    font-family: sans-serif;
+  }
+
+  .songs p span {
+    color: var(--primary-color);
+  }
+
+  .gaane {
+    margin-top: 1rem;
+    background-color: #6F1D1B;;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .song-image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .gaane .song1 {
+    background-position: right;
+  }
+
+  .gaane .song2 {
+    background-position: center;
+  }
+
+  .gaane .song3 {
+    background-position: right;
+  }
+
+  .gaane span {
+    font-family: var(--font-family);
+    font-weight: var(--bolder-font);
+    font-size: larger;
+  }
+
+  .dialogues {
+    padding: 1rem 6rem;
+    background-color: var(--secondary-color);
+  }
+
+  .dialogues h2 {
+    padding-top: 30px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .dialogues blockquote {
+    line-height: 50px;
+    padding: 3rem;
+    color: var(--bg-color);
+    text-shadow: 0 4.5px 15px var(--bg-color);
+    font-size: 27px;
+    text-align: justify;
+    font-family: "Inknut Antiqua";
+    /* font-style: italic; */
+    font-weight: var(--bold-font);
+  }
+
+  blockquote span {
+    color: #6F1D1B;
+    font-size: 35px;
+  }
+
+  footer {
+    background-color: #53200e;
+    color: #BB9457;
+    text-align: center;
+    font-weight: var(--bold-font);
+    font-family: sans-serif;
+    padding: 2rem 6rem;
+  }
+
+  footer i {
+    color: red;
+  }
